@@ -8,7 +8,7 @@ class TeachersController extends Controller {
 
     public function index()
     {
-        $teachers = Teacher::paginate(1);
+        $teachers = Teacher::paginate(5);
         //$teachers->setPath('teachers/');
 
         return view('teacher.index', compact('teachers'));

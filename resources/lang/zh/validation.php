@@ -102,6 +102,10 @@ return [
             'required' => '手机号码不能为空',
             'regex' => '手机号码不正确',
             'unique' => '该手机号码已被注册'
+        ],
+        'password' => [
+            'required' => '密码不能为空',
+            'confirmed' => '两次密码不一致'
         ]
     ],
 
