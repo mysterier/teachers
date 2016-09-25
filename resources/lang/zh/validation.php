@@ -90,8 +90,18 @@ return [
         'attribute-name' => [
             'rule-name' => 'custom-message',
         ],
+        'name' => [
+            'required' => '用户名不能为空'
+        ],
+        'email' => [
+            'required' => '邮箱地址不能为空',
+            'email' => '请填写正确的邮箱地址',
+            'unique' => '该邮箱地址已被注册'
+        ],
         'mobile' => [
-            'regex' => 'mobile number is wrong'
+            'required' => '手机号码不能为空',
+            'regex' => '手机号码不正确',
+            'unique' => '该手机号码已被注册'
         ]
     ],
 
