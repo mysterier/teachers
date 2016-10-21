@@ -43,7 +43,7 @@
 
 <div id="page">
     <!-- header-full-center -->
-    <header id="header" class="header-shadow header-full-center">
+    <header id="header" class="header-shadow header-full-center" style="display:none;">
       <div class="navbar-container sticky-header">
         <div class="navbar-container-inner clearfix">
             <div class="branding">
@@ -101,20 +101,22 @@
         </nav><!-- .main-nav-mobile --></header><!-- #header -->
         <!-- .page-section -->
     <div id="main">
-		<div class="page-section no-padding">
+		<div class="page-section no-padding" style="width:60%;margin-left:auto;margin-right:auto">
             <div class="row equal_height">
-                <div class="col-md-4 kt_column kt-column-bg hidden-xs hidden-sm" style="background-image: url('/assets/images/t2/7.jpg');"></div>
+                <div class="col-md-4 kt_column kt-column-bg hidden-xs hidden-sm" style="background-image: url('/assets/images/t2/7.jpg');">
+				
+				</div>
                 <div class="col-md-8 kt_column">
                     <div class="page-small-width">
-                        <div class="kt-heading-wrapper mar-top-90">
-                            <h3 class="kt-heading-title">
-							<img src="assets/images/logo.png" title="" alt="Delphinus"/>
+                        <div class="kt-heading-wrapper" style="margin-bottom:5px;">
+                            <h3 class="kt-heading-title" style="margin:0">
+							<img src="assets/images/logo.png" title="" alt="Delphinus" style="height:30px"/>
 							</h3>
                             <div class="kt-heading-subtitle"><a href="#">点击购买</a></div>
                         </div>
 
 
-                        <div class="products mar-bottom-20">
+                        <div class="products">
                             <div class="row multi-columns-row">
                                 <div data-wow-delay="0.2s" class="product col-lg-4 col-md-6 col-sm-6 col-xs-6 wow fadeIn">
 
@@ -217,7 +219,7 @@
 
             </div>
 			<div class="row equal_height">
-                <div class="col-md-4 kt_column pad-top-lg pad-bottom-lg" style="background-color: #9ebedf;">
+                <div class="col-md-4 kt_column my_pad" style="background-color: #9ebedf;">
                     <div class="kt-table">
                         <div class="kt-col">
                             <h2 class="white text-center no-margin">蔡珊</h2>
@@ -225,9 +227,9 @@
                     </div>
 
                 </div>
-                <div class="col-md-8 kt_column  pad-top-lg pad-bottom-lg" style="background-color: #a7c8eb; ">
+                <div class="col-md-8 kt_column  my_pad" style="background-color: #a7c8eb; ">
                     <div class="page-small-width">
-                        <p class="remove-mar-bottom">
+                        <p class="remove-mar-bottom" style="font-size:14px;">
 						蔡珊九岁开始习古筝，期间八年,师从著名演奏家、教育家李萌教授。高中期间习古琴，后以第一名的成绩考入天津音乐学院民乐系古琴表演专业，师从著名演奏家、教育家李凤云教授，在校期间曾受成公亮先生点拨。毕业后随龚一先生继续学琴。即使最困难的时期，她也从没有想过放弃。高中四年，为了支付昂贵的古琴学费，她边上学边教古筝。2006年考入天津音乐学院古琴系后，就开始正式教古琴一直到现在。
 						</p>
                     </div>
@@ -379,6 +381,14 @@
 </script>
 <!-- Javascript Main File -->
 <script type="text/javascript" src="assets/js/main.js"></script>
+<script>
+$(function(){
+	//$(".equal_height").css("height", "50%").children().css("height", "50%");
+	$(".product-title").css({'font-size':'14px','height':'60px','text-overflow':'ellipsis','overflow':'hidden'});
+	$(".product,.product-content").css({'margin-bottom':'5px'});
+	$(".my_pad").css({'padding':'10px 0px'});
+});
 
+</script>
 </body>
 </html>
